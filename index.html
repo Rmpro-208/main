@@ -5,7 +5,7 @@
       <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<style>
-		
+            
 	body ,html{
 	padding: 0;
 	margin: 0;
@@ -113,13 +113,14 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: rgba(0,0,0,.8);
+		background-color: #fff;
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
 	}
 	nav .links a {
 		font-size: 20px;
+                color: #5bc85c;
 	}
 	nav :checked ~ .links {
 		bottom: 0;
@@ -287,6 +288,10 @@ nav .icon-burger .line {
 }
 /*@media (max-width: 599px) {*/
     @media (max-width: 826px) {
+        
+        .heading2{
+            font-size:1.6rem;
+        }
     .card2 {
         padding-top: 0 !important;
     }
@@ -324,18 +329,87 @@ nav .icon-burger .line {
     padding:2rem;
     font-weight:normal;
     font-size: 26.09px;
-    color: #4a4a4a;
+    /*color: #4a4a4a;*/
     text-align:center;
+    color:#fff;
 }
 
-@media (max-width: 1236px) {
-    opt-ul{
-        display:inline-block;
+@media (max-width: 1300px) {
+    .opt-ul{
+        display:block !important;
+    }
+   
+    
+    
+}
+
+@media (max-width: 600px) {
+    .tag1{
+        font-size: 3.5rem;
+    }
+    .tag2{
+        font-size: 1.5rem;
+    }
+    .head2{
+        font-size:1.4rem;
     }
 }
+@media (max-width: 490px) {
+    .tag1{
+        font-size: 2.5rem;
+          font-weight:bold;
+    }
+    .tag2{
+        font-size: 1.5rem;
+    }
+    .head2{
+        font-size:1rem;
+    }
+}
+@media (max-width: 362px) {
+    .tag1{
+        font-size: 2rem;
+        font-weight:bold;
+    }
+    .tag2{
+        font-size: 1.5rem;
+    }
+    .head2{
+        font-size:0.7rem;
+    }
+}
+@media (max-width: 283px) {
+    .tag1{
+        font-size: 1.5rem;
+        line-height:1.5rem;
+    }
+    .tag2{
+        font-size: 1rem;
+    }
+}
+
+@keyframes slideInFromLeft {
+            0% {
+              transform: translateX(-100%);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+
+        .headline  {  
+          /* This section calls the slideInFromLeft animation we defined above */
+          animation: 1s ease-out 0s 1 slideInFromLeft;
+          color: #5cb85c;
+          font-weight:bold;
+          /*margin:40px;*/
+          /*font-size:3.9vw;*/
+          text-shadow: 1px 1px 1px #000; 
+        }
+
 </style>
 </head>
-<body>
+<body onload="floatUp()">
 
 <nav class="nav-transparent" id="nav">
 	<input id="nav-toggle" type="checkbox">
@@ -356,8 +430,8 @@ nav .icon-burger .line {
 
 <div class="container">
 	<div class="main">
-            <div class="headline">
-                <span class="tag1">Boost Your Grades</span></br>
+            <div class="headline " >
+                <span class="tag1" >Boost Your Grades</span></br>
                 <span class="tag2" >Get your degree with confidence</span>
             </div>
 	</div>
@@ -390,7 +464,7 @@ nav .icon-burger .line {
 <div class="second">
     <div class="inner-second">
 
-        <div class="heading2" style="font-weight:bold;"><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">We’re With You Every Step of The Way </span>  </div>
+        <div class="heading2 head2" style="font-weight:bold;"><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">We’re With You Every Step of The Way </span>  </div>
     <div class="cards">
         <div class="card">
             <div class="img"><img src="img/1.png"></div>
@@ -464,7 +538,7 @@ nav .icon-burger .line {
     <div class="inner-second">
         <div class" " style="width:50%;margin:0 auto;">
              
-             <div class="heading2"><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">Your solution is here</span></div>
+             <div class="heading2"><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;color:#fff;">Your solution is here</span></div>
             <div class='p card-text2'><p style="text-align:center;">Are you looking for a helping hand to support you along with your classes and get you a business degree? 
                     Are you a type of a person who loves taking business decisions but hate reading management theories?</p></div>
             
@@ -499,8 +573,7 @@ nav .icon-burger .line {
                     myNav.classList.remove("nav-colored");
                 }
             };
-            
-            
+   
     </script>
 </body>
 </html>
