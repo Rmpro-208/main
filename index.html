@@ -2,460 +2,44 @@
 <!DOCTYPE html>
 <head>
     
-      <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<style>
-            .tag1{
-                color: transparent;
-    -webkit-text-stroke: 3px;
-    -webkit-text-stroke-color: #000;
-    /*-webkit-text-stroke-color: #5cb85c;*/
-            }        
-	body ,html{
-	padding: 0;
-	margin: 0;
-	font-family: Proxima Nova,Arial;
-        overflow-x: hidden;
-        box-sizing:border-box;
-}
-.container {
-	position: relative;
-	
-}
-.container .main{
-	display: block;
-	width: 100%;
-	background-color:#fff;
-	height:35rem;
-	
-
-	}
-
-.headline{
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%, -50%);
-	font-family: Proxima Nova,Arial;
-	font-size:20px;
-}
-
-nav {
-	position: fixed;
-	z-index: 10;
-	left: 0;
-	right: 0;
-	top: 0;
-	font-family: 'Montserrat', sans-serif;
-	padding: 0 5%;
-	height: 60px;
-
-}
-nav .logo img{
-     height: 1.5em;
-    width: 8em;
-}
-nav .logo {
-	float: left;
-	width: 40%;
-	height: 100%;
-       
-	display: flex;
-	align-items: center;
-	font-size: 24px;
-	color: black;
-        /*color:#fff;*/
-}
-nav .links {
-	float: right;
-	padding: 0;
-	margin: 0;
-	width: 60%;
-	height: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-nav .links li {
-	list-style: none;
-}
-
-
-nav .links a {
-	display: block;
-	padding: 1em;
-	font-size: 16px;
-	font-weight: bold;
-	color: black;
-        /*color:#fff;*/
-	text-decoration: none;
-}
-#nav-toggle {
-	position: absolute;
-	top: -100px;
-}
-nav .icon-burger {
-	display: none;
-	position: absolute;
-	right: 5%;
-	top: 50%;
-	transform: translateY(-50%);
-}
-nav .icon-burger .line {
-	width: 30px;
-	height: 5px;
-	background-color: #fff;
-	margin: 5px;
-	border-radius: 3px;
-	transition: all .3s ease-in-out;
-}
-@media screen and (max-width: 768px) {
-	nav .logo {
-		float: left;
-		width: auto;
-		justify-content: center;
-	}
-        
-        nav .logo img{
-                height: 1.7em;
-            width: 9em;
-        }
-	nav .links {
-		float: none;
-		position: fixed;
-		z-index: 9;
-		left: 0;
-		right: 0;
-		top: 100px;
-		bottom: 100%;
-		width: auto;
-		height: auto;
-		flex-direction: column;
-		justify-content: space-evenly;
-		background-color: #fff;
-		overflow: hidden;
-		box-sizing: border-box;
-		transition: all .5s ease-in-out;
-	}
-	nav .links a {
-		font-size: 20px;
-                color: #5bc85c;
-	}
-	nav :checked ~ .links {
-		bottom: 0;
-	}
-	nav .icon-burger {
-		display: block;
-	}
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
-		opacity: 0;
-	}
-	
-}
-
-.heading2{
-    text-align:center;line-height: 2rem;font-size: 2.5rem;margin-bottom: 3.71249rem;padding-top: .28751rem; color: #000;
-}
-.headline{
-     text-align:center; width: 100%; margin: 0 auto;text-align: center;
-}
-.tag1{
-     font-weight:bold;line-height: 6.5rem;font-size: 5rem; margin-bottom: .70999rem;padding-top: 1.29001rem;transform: translateY(-4px);
-     font-weight: 200;
-}
-.tag2{
-    line-height: 2rem;font-size: 2rem;margin-bottom: 4.35499rem; padding-top: .14501rem;transform: translateY(-2px);
-}
-.secbody{
-    display: flex; justify-content: space-around; text-align: center;width: 86%;margin:0 auto; margin-top: 10px;
-}
-.card1{
-     width: 30%; display: flex; flex-direction: column;  align-items: center;
-}
-.image{
-    background-image:url('a5wtk08.1.svg');margin:auto;  height: 186px;  width: auto; background-repeat: no-repeat; background-position:50%;
-}
-
- /*322 px width thi pehle img ki and card text2 ki 20rem and 300px bhi thi*/ 
-.card-text{
-    font-weight:normal; margin-top: 50px;margin-bottom: 18px;font-size: 26.09px;color: #4a4a4a;text-align:center;
-}
-.card-text2{
-    width: auto;font-size: 15px; color: #4a4a4a;line-height: 23px; -webkit-font-smoothing: antialiased;
-    font-family: Proxima Nova,Arial;margin:auto;
-    -moz-osx-font-smoothing: grayscale;padding-top: .62001rem;margin-bottom: 1.37999rem;text-align:center;
-}
-.second{
-    width:100%;
-}
-/*.inner-second{
-        justify-content: center;flex-direction: column; align-items: center;display: flex;align-items: flex-start;justify-content: flex-start;
-    width: 96rem; margin: 0 auto; padding-top: 80px; padding-bottom: 100px;position: relative;
-}*/
-.inner-second{
-        padding-top: 80px;
-    padding-bottom: 100px;
-    
-}
-
-.nav-colored { background-color:activecaption;font-color:white; }
-.nav-transparent { background-color:transparent;}
-
-@media screen and (max-width:935px) {  
-    .one{
-        width:50% !important;text-align: center;
-    }
-    .everyway{
-      
-        height:auto;
-        
-    }
-  
-}  
-.thirdbody{
-    display: flex;  flex-direction: row;  align-items: flex-start; margin: 0 auto;justify-content: center;
-}
-.thirdh3{
-        font-size: 22px;
-    line-height: 27px;
-   
-    color: #4a4a4a;
-    margin-bottom: 8px;
-}
-.thirdtext{
-    font-size: 14px;
-    line-height: 22px;
-  
-    color: #4a4a4a;
-}
-
-.thirdbody .one{
-    position: relative;
-    padding-left: 62px;
-    margin-bottom: 57px;
-    margin-right: 120px;
-}
-._2qZob{
-        
-        border-radius: 10px;
-        margin-top: 20px;
-        justify-content: center;
-        cursor: pointer;
-        user-select: none;
-        transition: background-color .3s;
-        outline: none;
-        letter-spacing: .5px;
-        height: 42px;
-        width: auto;
-        border: 0;
-        text-transform: uppercase;
-        font-size: 18px;
-        line-height: normal;
-        background-color: #5cb85c;
-        color: #fff;
-        padding: 5px 20px;
-        white-space: nowrap;
-        font-weight: 600;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        display: inline-flex;
-        
-        align-items: center;
-}
-
-
-
-
-.card {
-  width:80%;
-  color: white;
-  padding: 1rem;
-  margin:auto;
-  
-}
-.cards {
-    text-align: center;
-  max-width:80%;
-  margin:  auto;
-  display: grid;
-  grid-gap: 1rem;
-}
-.cardss {
-    text-align: center;
-  max-width:80%;
-  margin:  auto;
-  display: grid;
-  grid-gap: 1rem;
-}
-@media (min-width: 600px) {
-  .cards { grid-template-columns: repeat(2, 1fr);}
-  
-  
-}
-
-@media (max-width:1300px){
-    .cardss { grid-template-columns: repeat(2, 1fr);}
-}
-@media (min-width:1100px){
-    .cardss { grid-template-columns: repeat(3, 1fr);}
-}
-/*@media (max-width: 599px) {*/
-    @media (max-width: 826px) {
-        
-        .heading2{
-            font-size:1.6rem;
-        }
-    .card2 {
-        padding-top: 0 !important;
-    }
-    .card22 {
-        padding-top: 0 !important;
-    }
-    .cardss { grid-template-columns: repeat(1, 1fr); }
-} 
-  
-  
-
-/*@media (min-width: 1000px) {*/
-    @media (min-width: 1434px) {
-  .cards { grid-template-columns: repeat(5, 1fr); }
-  .cardss { grid-template-columns: repeat(3, 1fr); }
-  .card2{padding-top:40%;};
-  .card22 {
-        padding-top: 70% !important;
-    }
-}
-@media (min-width: 1200px){
-    .cards { grid-template-columns: repeat(5, 1fr); }
-    .card2{padding-top:40%;};
-  .card22 {
-        padding-top: 70% !important;
-    }
-}
-
-.img{
-    margin:auto;
-}
-
-.opt{
-    list-style-type:none;
-    padding:2rem;
-    font-weight:normal;
-    font-size: 26.09px;
-    /*color: #4a4a4a;*/
-    text-align:center;
-    color:#fff;
-}
-
-@media (max-width: 1300px) {
-    .opt-ul{
-        display:block !important;
-    }
-   
-    
-    
-}
-
-@media (max-width: 600px) {
-    .tag1{
-        font-size: 3.5rem;
-    }
-    .tag2{
-        font-size: 1.5rem;
-    }
-    .head2{
-        font-size:1.4rem;
-    }
-}
-@media (max-width: 490px) {
-    .tag1{
-        font-size: 2.5rem;
-          font-weight:bold;
-    }
-    .tag2{
-        font-size: 1.5rem;
-    }
-    .head2{
-        font-size:1rem;
-    }
-}
-@media (max-width: 362px) {
-    .tag1{
-        font-size: 2rem;
-        font-weight:bold;
-    }
-    .tag2{
-        font-size: 1.5rem;
-    }
-    .head2{
-        font-size:0.7rem;
-    }
-}
-@media (max-width: 283px) {
-    .tag1{
-        font-size: 1.5rem;
-        line-height:1.5rem;
-    }
-    .tag2{
-        font-size: 1rem;
-    }
-}
-
-@keyframes slideInFromLeft {
-            0% {
-              transform: translateX(-100%);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
-
-        .headline  {  
-          /* This section calls the slideInFromLeft animation we defined above */
-          animation: 1s ease-out 0s 1 slideInFromLeft;
-          /*color: #5cb85c;*/
-          color: #000;
-          font-weight:bold;
-          /*margin:40px;*/
-          /*font-size:3.9vw;*/
-          /*text-shadow: 1px 1px 1px #000;*/ 
-        }
-
-</style>
+    <link href="css.css" rel="stylesheet">
 </head>
 <body onload="floatUp()">
 
-<nav class="nav-transparent" id="nav">
-	<input id="nav-toggle" type="checkbox">
-        <div class="logo"><img src="img/logo.png"></div>
-	<ul class="links">
-		<li><a href="#home">Services</a></li>
-		<li><a href="#about">Samples</a></li>
-		<li><a href="#work">Grade Proofs</a></li>
-		<li><a href="#projects">Courses</a></li>
-		<li><a href="#contact"><button style="background-color:red;padding:10px 15px 10px 15px;border-radius:20px;">Contact</button></a></li>
-	</ul>
-	<label for="nav-toggle" class="icon-burger">
-		<div class="line"></div>
-		<div class="line"></div>
-		<div class="line"></div>
-	</label>
-</nav>
+    <nav class="nav-transparent" id="nav">
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo"><img src="img/logo.png"></div>
+            <ul class="links">
+                    <li><a href="#home">Services</a></li>
+                    <li><a href="#about">Samples</a></li>
+                    <li><a href="#work">Grade Proofs</a></li>
+                    <li><a href="#projects">Courses</a></li>
+                    <li><a href="#contact"><button style="background-color:red;padding:10px 15px 10px 15px;border-radius:20px;">Contact</button></a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+            </label>
+    </nav>
 
-<div class="container">
-	<div class="main">
-            <div class="headline " >
-                <span class="tag1" >Boost Your Grades</span></br>
-                <span class="tag2" >Get your degree with confidence</span>
+    <div class="container">
+            <div class="main">
+                <div class="headline " >
+                    <span class="tag1" >Boost Your Grades</span></br>
+                    <span class="tag2" >Get your degree with confidence</span>
+                    <div class="cardss" style="max-width:80%;">
+                        <div class="card"><button>Reviews</button></div>
+                        <div class="card"><button>Order Now</button></div>
+                        <div class="card"><button>Pricing</button></div>
             </div>
-	</div>
-</div>
+                </div>
+
+            </div>
+
+    </div>
 
 <!--
 <div class="second" >
@@ -481,110 +65,110 @@ nav .icon-burger .line {
     </div>  
 </div>-->
 
-<div class="second">
-    <div class="inner-second">
+    <div class="second">
+        <div class="inner-second">
 
-        <div class="heading2 head2" style="font-weight:bold;"><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">We’re With You Every Step of The Way </span>  </div>
-    <div class="cards">
-        <div class="card">
-            <div class="img"><img src="img/1.png"></div>
-            <h3 class="thirdh3">Achieve Your Desired Grades</h3>
-            <div class="thirdtext">
-                We at My Management Tutor help students in completing their assignments and online classes by providing online 
-                class help. Our specialized services can cater your needs easily and score high in your classes.
+            <div class="heading2 head2" style="font-weight:bold;"><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">We’re With You Every Step of The Way </span>  </div>
+        <div class="cards">
+            <div class="card">
+                <div class="img"><img src="img/1.png"></div>
+                <h3 class="thirdh3">Achieve Your Desired Grades</h3>
+                <div class="thirdtext">
+                    We at My Management Tutor help students in completing their assignments and online classes by providing online 
+                    class help. Our specialized services can cater your needs easily and score high in your classes.
+                </div>
+            </div>
+            <div class="card card2">
+                <div class="img"><img src="img/2.png"></div>
+                <h3 class="thirdh3">Compatible With Your Schedule</h3>
+                <div class="thirdtext">
+                    Our services are completely online and can be manageable easily with different time zones. You can schedule your
+                    time with our online management experts and get all the management class help services.
+                </div>
+            </div>
+            <div class="card  card22">
+                <div class="img"><img src="img/3.png"></div>
+                <h3 class="thirdh3">Analyze Your Performance</h3>
+                <div class="thirdtext">
+                    For analyzing performance our tutors conduct weekly tests that will record the performance of each student.
+                    According to their test performance, tutors will provide relevant advice and feedback
+                </div>
+            </div>
+            <div class="card card2" >
+                <div class="img"><img src="img/4.png"></div>
+                <h3 class="thirdh3" >Value For Money</h3>
+                <div class="thirdtext">
+                    Our economical tutoring program makes it possible for every student who wants to learn. We understand the 
+                    value your precious time and money, and our student friendly classes are worthy of your time.
+                </div>
+            </div>
+            <div class="card">
+                <div class="img"><img src="img/5.png"></div>
+                <h3 class="thirdh3">24*7 Support</h3>
+                <div class="thirdtext">
+                    Time should not be a constraint when you decide that you must learn. We are following this approach so our student can learn as per 
+                    their need and convenience. Our dedicated tutors are always available for students. You are just one click away from our
+                    excellent tutors
+                </div>
             </div>
         </div>
-        <div class="card card2">
-            <div class="img"><img src="img/2.png"></div>
-            <h3 class="thirdh3">Compatible With Your Schedule</h3>
-            <div class="thirdtext">
-                Our services are completely online and can be manageable easily with different time zones. You can schedule your
-                time with our online management experts and get all the management class help services.
-            </div>
-        </div>
-        <div class="card  card22">
-            <div class="img"><img src="img/3.png"></div>
-            <h3 class="thirdh3">Analyze Your Performance</h3>
-            <div class="thirdtext">
-                For analyzing performance our tutors conduct weekly tests that will record the performance of each student.
-                According to their test performance, tutors will provide relevant advice and feedback
-            </div>
-        </div>
-        <div class="card card2" >
-            <div class="img"><img src="img/4.png"></div>
-            <h3 class="thirdh3" >Value For Money</h3>
-            <div class="thirdtext">
-                Our economical tutoring program makes it possible for every student who wants to learn. We understand the 
-                value your precious time and money, and our student friendly classes are worthy of your time.
-            </div>
-        </div>
-        <div class="card">
-            <div class="img"><img src="img/5.png"></div>
-            <h3 class="thirdh3">24*7 Support</h3>
-            <div class="thirdtext">
-                Time should not be a constraint when you decide that you must learn. We are following this approach so our student can learn as per 
-                their need and convenience. Our dedicated tutors are always available for students. You are just one click away from our
-                excellent tutors
-            </div>
         </div>
     </div>
-    </div>
-</div>
-    
-<div class="">
+
     <div class="">
-        <div class="heading2"  ><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">How it works</span></div>
-        <div class="cardss">
-            <div class="card">
-                <div class="image" ></div>
-                <h3 class="card-text">1. Request</h3>
-                <div class="card-text2">Tell us what you need help with and our smart matching system will connect you with an online tutor. Sign up for a free trial using a debit/credit card.</div>
-            </div>
-            <div class="card">
-                <div class="image" ></div>
-                <h3 class="card-text">1. Request</h3>
-                <div class="card-text2">Tell us what you need help with and our smart matching system will connect you with an online tutor. Sign up for a free trial using a debit/credit card.</div>
-            </div>
-            <div class="card">
-                <div class="image" ></div>
-                <h3 class="card-text">1. Request</h3>
-                <div class="card-text2">Tell us what you need help with and our smart matching system will connect you with an online tutor. Sign up for a free trial using a debit/credit card.</div>
+        <div class="">
+            <div class="heading2"  ><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">How it works</span></div>
+            <div class="cardss">
+                <div class="card">
+                    <div class="image" ></div>
+                    <h3 class="card-text">1. Request</h3>
+                    <div class="card-text2">Tell us what you need help with and our smart matching system will connect you with an online tutor. Sign up for a free trial using a debit/credit card.</div>
+                </div>
+                <div class="card">
+                    <div class="image" ></div>
+                    <h3 class="card-text">1. Request</h3>
+                    <div class="card-text2">Tell us what you need help with and our smart matching system will connect you with an online tutor. Sign up for a free trial using a debit/credit card.</div>
+                </div>
+                <div class="card">
+                    <div class="image" ></div>
+                    <h3 class="card-text">1. Request</h3>
+                    <div class="card-text2">Tell us what you need help with and our smart matching system will connect you with an online tutor. Sign up for a free trial using a debit/credit card.</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div class="second" style="background-color:#5bc85c;">
-    <div class="inner-second">
-        <div class" " style="width:50%;margin:0 auto;">
-             
-             <div class="heading2"><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;color:#fff;">Your solution is here</span></div>
-            <div class='p card-text2'><p style="text-align:center;">Are you looking for a helping hand to support you along with your classes and get you a business degree? 
-                    Are you a type of a person who loves taking business decisions but hate reading management theories?</p></div>
-            
-        </div>
-        <div class="options" >
-<!--            <div class="opt card-text">Finance Homework Help</div>
-            <div class="opt card-text" >Management Homework Help</div>
-            <div class="opt card-text">Economics Homework Help</div>
-            <div class="opt card-text">Statistics Homework Help</div>-->
-            <ul class="opt-ul" style="text-align:center;display:flex;width:65%;margin:0 auto;">
-                    <li class="opt " >Finance Homework Help</li>
-                    <li class="opt">Management Homework Help</li>
-                    <li class="opt">Economics Homework Help</li>
-                    <li class="opt">Statistics Homework Help</li>
-            </ul>
-            
+    <div class="second" style="background-color:#5bc85c;">
+        <div class="inner-second">
+            <div class" " style="width:50%;margin:0 auto;">
+
+                 <div class="heading2"><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;color:#fff;">Your solution is here</span></div>
+                <div class='p card-text2'><p style="text-align:center;">Are you looking for a helping hand to support you along with your classes and get you a business degree? 
+                        Are you a type of a person who loves taking business decisions but hate reading management theories?</p></div>
+
+            </div>
+            <div class="options" >
+    <!--            <div class="opt card-text">Finance Homework Help</div>
+                <div class="opt card-text" >Management Homework Help</div>
+                <div class="opt card-text">Economics Homework Help</div>
+                <div class="opt card-text">Statistics Homework Help</div>-->
+                <ul class="opt-ul" style="text-align:center;display:flex;width:65%;margin:0 auto;">
+                        <li class="opt " >Finance Homework Help</li>
+                        <li class="opt">Management Homework Help</li>
+                        <li class="opt">Economics Homework Help</li>
+                        <li class="opt">Statistics Homework Help</li>
+                </ul>
+
+            </div>
         </div>
     </div>
-</div>
 
     <script>
         var myNav = document.getElementById('nav');
             window.onscroll = function () { 
                 "use strict";
                 if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20 ){
-                
+
                     myNav.classList.add("nav-colored");
                     myNav.classList.remove("nav-transparent");
                 } 
@@ -593,7 +177,7 @@ nav .icon-burger .line {
                     myNav.classList.remove("nav-colored");
                 }
             };
-   
+
     </script>
 </body>
 </html>
