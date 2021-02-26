@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="css.css" rel="stylesheet">
 </head>
-<body onload="floatUp()">
+
 
     <nav class="nav-transparent" id="nav">
             <input id="nav-toggle" type="checkbox">
-            <div class="logo"><img src="img/logo.png"></div>
+            <div class="logo"><img src="img/logo.png" style="border:2px; solid #5cb85c;"></div>
             <ul class="links">
                     <li><a href="#home">Services</a></li>
                     <li><a href="#about">Samples</a></li>
                     <li><a href="#work">Grade Proofs</a></li>
                     <li><a href="#projects">Courses</a></li>
-                    <li><a href="#contact"><button style="background-color:red;padding:10px 15px 10px 15px;border-radius:20px;">Contact</button></a></li>
+                    <li><a href="#contact"><button style="border-color:#5cb85c;padding:10px 15px 10px 15px;border-radius:20px;">Order Now</button></a></li>
             </ul>
             <label for="nav-toggle" class="icon-burger">
                     <div class="line"></div>
@@ -29,15 +29,31 @@
             <div class="main">
                 <div class="headline " >
                     <span class="tag1" >Boost Your Grades</span></br>
-                    <span class="tag2" >Get your degree with confidence</span>
-                    <div class="cardss" style="max-width:80%;">
+                    <span class="tag2" >Get your degree with confidence</span><br>
+                    <div class="ul-list">
+                        <ul style="justify-content: center; display: flex;list-style: none;">
+                            <li style="display:inline;list-style:none;">
+                                <img src="img/review.png" style="height:auto;width:9vh;">
+                                <button>Reviews</button>
+                            </li>
+                            <li>
+                                <img src="img/order.png" style="height:auto;width:9vh;">
+                                <button>Order Now</button>
+                            </li>
+                            <li>
+                                <img src="img/pricing.png" style="height:auto;width:9vh;">
+                                <button><a href="pricing.html">Pricing</a></button>
+                            </li>
+                        </ul>
+                    </div>
+<!--                    <div class="cardss" style="max-width:80%;">
                         <div class="card"><button>Reviews</button></div>
                         <div class="card"><button>Order Now</button></div>
                         <div class="card"><button>Pricing</button></div>
+</div>-->       </div>
             </div>
-                </div>
 
-            </div>
+        </div>
 
     </div>
 
@@ -163,6 +179,58 @@
         </div>
     </div>
 
+<!--subjects we cover--> 
+<div class="second">
+    <div class="inner-second">
+        <div class="heading2"  ><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">Why Choose us</span></div>
+        <div class="whycards" style='padding:0 !important;'>
+            <div class="card" style='color:#000 !important;padding:0 !important;'>
+                    <h3 class='card-text' style='text-align:left;'>On Demand Tutoring</br></h3>
+                    <p class=' card-text2' style='text-align: left;'>Connect with an online tutor in less than 30
+                       seconds, 24/7. It doesn't matter if you want help with
+                       a single problem or you need a 3-hour lesson.
+                    </p>
+            </div>
+            <div class="card " style='color:#000 !important;padding:0 !important;'>
+                    <h3 class='card-text' style='text-align:left;'>Learn from the best tutors</br></h3>
+                    <p class=' card-text2 '  style='text-align: left;'>Highly qualified tutors from the best universities
+                        across the globe ready to help. An acceptance rate
+                        of 4% means all our tutors are thoroughly screened.
+                    </p>
+            </div>
+<!--        </div>
+        <div class=" whycards">-->
+            <div class="card " style='color:#000 !important;padding:0 !important;'>
+                    <h3 class='card-text' style='text-align:left;'>All the tools you need</br></h3>
+                    <p class=' card-text2'  style='text-align: left;'>Our lesson space features a virtual whiteboard, text
+                        editor, audio/video chat, screensharing and so much
+                        more. All lessons are archived for your convenience
+                    </p>
+            </div>
+            <div class="card" style='color:#000 !important;padding:0 !important;'>
+                    <h3 class='card-text' style='text-align:left;'> Get help in any subject</br></h3>
+                    <p class=' card-text2'  style='text-align: left;' >We cover over 300 subjects across all grade levels.
+                        Whether it's high school algebra or college-level
+                        Spanish, we have a tutor that can help.
+                    </p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!--ends-->
+<div class='second'>
+    <div class='inner-second'>
+         <div class="heading2"  ><span style="border-bottom: 2px solid #5cb85c;padding:0.9rem;">Subjects we cover</span></div>
+         <div class="subcont">
+             
+         </div>
+    </div>
+</div>
+
+
+
+
     <script>
         var myNav = document.getElementById('nav');
             window.onscroll = function () { 
@@ -179,5 +247,5 @@
             };
 
     </script>
-</body>
+
 </html>
